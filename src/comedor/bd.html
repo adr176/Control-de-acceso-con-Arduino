@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro para el comedor</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div  class="form">
+	<form action="registro.php" method="POST">
+		<h1>Registro para el comedor</h1>
+
+		<label for="id">ID del alumno</label>
+			<input type="number" name="id" min="1" required>
+		
+		<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" required>
+        </br>
+		<label for="apellido1" />Primer apellido</label>
+			<input type="text" name="apellido1" required>
+
+		<label for="apellido2" />Segundo apellido</label>
+			<input type="text" name="apellido2">
+		
+		<label for="pago">Pago</label>
+			<input type="radio" name="pago" value="1" required> <span class="si"> Sí</span>
+			<input type="radio" name="pago" value="0" required> <span class="no">No</span>
+		<br><br>
+		
+		<label for="alergias">Alergias</label>
+	
+		<table>
+					<tr>
+						<td> <input type="checkbox" name="alergias[]" value="15"> Ninguna  </td>
+						<td> <input type="checkbox" name="alergias[]" value="1"> Pescado  </td>
+						<td> <input type="checkbox" name="alergias[]" value="2"> Frutos secos </td>
+						<td> <input type="checkbox" name="alergias[]" value="3"> Lácteos  </td>							
+					</tr>
+	                <tr>
+						<td> <input type="checkbox" name="alergias[]" value="4"> Moluscos </td>
+						<td> <input type="checkbox" name="alergias[]" value="5"> Gluten </td>
+						<td> <input type="checkbox" name="alergias[]" value="6"> Crustáceos </td>
+						<td> <input type="checkbox" name="alergias[]" value="7"> Huevos </td>	  
+			        </tr>
+					<tr>
+						<td> <input type="checkbox" name="alergias[]" value="8"> Cacahuetes </td>
+						<td> <input type="checkbox" name="alergias[]" value="9"> Soja </td>
+						<td> <input type="checkbox" name="alergias[]" value="10"> Apio </td>
+						<td> <input type="checkbox" name="alergias[]" value="11"> Mostaza </td> 
+					</tr>
+					<tr>
+						<td> <input type="checkbox" name="alergias[]" value="12"> Sésamo </td>
+						<td> <input type="checkbox" name="alergias[]" value="13"> Altramuz </td>
+						<td> <input type="checkbox" name="alergias[]" value="14"> Sulfatos </td>
+					</tr>
+                </table>
+				<input type="submit" class="añadir" name="añadir" value="AÑADIR">
+		
+</form>
+
+<p>____________________________________________________</p>
+
+<form action="registro.php" method="POST">
+	<label for="id">ID del alumno</label>
+			<input type="number" name="id" id="nombre"  min="1" required>
+	<input type="submit" class="eliminar" name="eliminar" value="ELIMINAR">
+</form>
+
+
+</div>
+
+</body>
+</html>
