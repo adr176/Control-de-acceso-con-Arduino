@@ -1,5 +1,5 @@
 # Control-de-acceso-con-Arduino
-Trabajo de Fin de Grado de Adrián Navazo y Julia Miguelez
+Trabajo de Fin de Grado de Adrián Navazo y Julia Miguélez
 
 Este proyecto consiste en el diseño e implementación de un dispositivo de control
 de acceso para un comedor escolar. Se compone de dos Arduinos, un lector de huellas,
